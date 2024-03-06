@@ -1,0 +1,361 @@
+/*!
+Theme Name: Contractor
+Theme URI: https://www.templatemonster.com/vendors/zemez
+Author: Zemez
+Author URI: https://zemez.io/wordpress
+Description: Kava contractor theme.
+Template: kava
+Version: 1.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: contractor
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+DocumentationID: contractor
+Template Id: prod-4439 
+*/
+
+/*--------------------------------------------------------------
+## Preloader
+--------------------------------------------------------------*/
+
+.preloader-boxes svg polygon {
+  fill: #f9b707;
+}
+
+.preloader-boxes svg polyline:nth-of-type(2) {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.preloader-boxes svg polyline:nth-of-type(1) {
+  fill: #ffffff;
+}
+
+.page-preloader-cover {
+  position: fixed;
+  z-index: 1200;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.preloader-boxes {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-56px, -48px);
+  -o-transform: translate(-56px, -48px);
+  -ms-transform: translate(-56px, -48px);
+  -webkit-transform: translate(-56px, -48px);
+  -moz-transform: translate(-56px, -48px);
+}
+
+.preloader-box {
+  width: 48px;
+  height: 56px;
+  position: absolute;
+  transition: all ease 0.225s;
+  -o-transition: all ease 0.225s;
+  -ms-transition: all ease 0.225s;
+  -webkit-transition: all ease 0.225s;
+  -moz-transition: all ease 0.225s;
+}
+
+.preloader-box1 {
+  animation: cssload-tetromino1 1.125s ease-out infinite;
+  -o-animation: cssload-tetromino1 1.125s ease-out infinite;
+  -ms-animation: cssload-tetromino1 1.125s ease-out infinite;
+  -webkit-animation: cssload-tetromino1 1.125s ease-out infinite;
+  -moz-animation: cssload-tetromino1 1.125s ease-out infinite;
+}
+
+.preloader-box2 {
+  animation: cssload-tetromino2 1.125s ease-out infinite;
+  -o-animation: cssload-tetromino2 1.125s ease-out infinite;
+  -ms-animation: cssload-tetromino2 1.125s ease-out infinite;
+  -webkit-animation: cssload-tetromino2 1.125s ease-out infinite;
+  -moz-animation: cssload-tetromino2 1.125s ease-out infinite;
+}
+
+.preloader-box3 {
+  animation: cssload-tetromino3 1.125s ease-out infinite;
+  -o-animation: cssload-tetromino3 1.125s ease-out infinite;
+  -ms-animation: cssload-tetromino3 1.125s ease-out infinite;
+  -webkit-animation: cssload-tetromino3 1.125s ease-out infinite;
+  -moz-animation: cssload-tetromino3 1.125s ease-out infinite;
+  z-index: 2;
+}
+
+.preloader-box4 {
+  animation: cssload-tetromino4 1.125s ease-out infinite;
+  -o-animation: cssload-tetromino4 1.125s ease-out infinite;
+  -ms-animation: cssload-tetromino4 1.125s ease-out infinite;
+  -webkit-animation: cssload-tetromino4 1.125s ease-out infinite;
+  -moz-animation: cssload-tetromino4 1.125s ease-out infinite;
+}
+
+@keyframes cssload-tetromino1 {
+  0%,
+  40% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(24px, -13px);
+    transform: translate(24px, -13px);
+  }
+  60%,
+  100% {
+    -webkit-transform: translate(48px, 0);
+    transform: translate(48px, 0);
+  }
+}
+
+@-o-keyframes cssload-tetromino1 {
+  0%,
+  40% {
+    -o-transform: translate(0, 0);
+  }
+  50% {
+    -o-transform: translate(24px, -13px);
+  }
+  60%,
+  100% {
+    -o-transform: translate(48px, 0);
+  }
+}
+
+@-ms-keyframes cssload-tetromino1 {
+  0%,
+  40% {
+    -ms-transform: translate(0, 0);
+  }
+  50% {
+    -ms-transform: translate(24px, -13px);
+  }
+  60%,
+  100% {
+    -ms-transform: translate(48px, 0);
+  }
+}
+
+@-webkit-keyframes cssload-tetromino1 {
+  0%,
+  40% {
+    -webkit-transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(24px, -13px);
+  }
+  60%,
+  100% {
+    -webkit-transform: translate(48px, 0);
+  }
+}
+
+@-moz-keyframes cssload-tetromino1 {
+  0%,
+  40% {
+    -moz-transform: translate(0, 0);
+  }
+  50% {
+    -moz-transform: translate(24px, -13px);
+  }
+  60%,
+  100% {
+    -moz-transform: translate(48px, 0);
+  }
+}
+
+@keyframes cssload-tetromino2 {
+  0%,
+  20% {
+    -webkit-transform: translate(48px, 0px);
+    transform: translate(48px, 0px);
+  }
+  40%,
+  100% {
+    -webkit-transform: translate(72px, 13px);
+    transform: translate(72px, 13px);
+  }
+}
+
+@-o-keyframes cssload-tetromino2 {
+  0%,
+  20% {
+    -o-transform: translate(48px, 0px);
+  }
+  40%,
+  100% {
+    -o-transform: translate(72px, 13px);
+  }
+}
+
+@-ms-keyframes cssload-tetromino2 {
+  0%,
+  20% {
+    -ms-transform: translate(48px, 0px);
+  }
+  40%,
+  100% {
+    -ms-transform: translate(72px, 13px);
+  }
+}
+
+@-webkit-keyframes cssload-tetromino2 {
+  0%,
+  20% {
+    -webkit-transform: translate(48px, 0px);
+  }
+  40%,
+  100% {
+    -webkit-transform: translate(72px, 13px);
+  }
+}
+
+@-moz-keyframes cssload-tetromino2 {
+  0%,
+  20% {
+    -moz-transform: translate(48px, 0px);
+  }
+  40%,
+  100% {
+    -moz-transform: translate(72px, 13px);
+  }
+}
+
+@keyframes cssload-tetromino3 {
+  0% {
+    -webkit-transform: translate(72px, 13px);
+    transform: translate(72px, 13px);
+  }
+  20%,
+  60% {
+    -webkit-transform: translate(48px, 27px);
+    transform: translate(48px, 27px);
+  }
+  90%,
+  100% {
+    -webkit-transform: translate(24px, 13px);
+    transform: translate(24px, 13px);
+  }
+}
+
+@-o-keyframes cssload-tetromino3 {
+  0% {
+    -o-transform: translate(72px, 13px);
+  }
+  20%,
+  60% {
+    -o-transform: translate(48px, 27px);
+  }
+  90%,
+  100% {
+    -o-transform: translate(24px, 13px);
+  }
+}
+
+@-ms-keyframes cssload-tetromino3 {
+  0% {
+    -ms-transform: translate(72px, 13px);
+  }
+  20%,
+  60% {
+    -ms-transform: translate(48px, 27px);
+  }
+  90%,
+  100% {
+    -ms-transform: translate(24px, 13px);
+  }
+}
+
+@-webkit-keyframes cssload-tetromino3 {
+  0% {
+    -webkit-transform: translate(72px, 13px);
+  }
+  20%,
+  60% {
+    -webkit-transform: translate(48px, 27px);
+  }
+  90%,
+  100% {
+    -webkit-transform: translate(24px, 13px);
+  }
+}
+
+@-moz-keyframes cssload-tetromino3 {
+  0% {
+    -moz-transform: translate(72px, 13px);
+  }
+  20%,
+  60% {
+    -moz-transform: translate(48px, 27px);
+  }
+  90%,
+  100% {
+    -moz-transform: translate(24px, 13px);
+  }
+}
+
+@keyframes cssload-tetromino4 {
+  0%,
+  60% {
+    -webkit-transform: translate(24px, 13px);
+    transform: translate(24px, 13px);
+  }
+  90%,
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@-o-keyframes cssload-tetromino4 {
+  0%,
+  60% {
+    -o-transform: translate(24px, 13px);
+  }
+  90%,
+  100% {
+    -o-transform: translate(0, 0);
+  }
+}
+
+@-ms-keyframes cssload-tetromino4 {
+  0%,
+  60% {
+    -ms-transform: translate(24px, 13px);
+  }
+  90%,
+  100% {
+    -ms-transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes cssload-tetromino4 {
+  0%,
+  60% {
+    -webkit-transform: translate(24px, 13px);
+  }
+  90%,
+  100% {
+    -webkit-transform: translate(0, 0);
+  }
+}
+
+@-moz-keyframes cssload-tetromino4 {
+  0%,
+  60% {
+    -moz-transform: translate(24px, 13px);
+  }
+  90%,
+  100% {
+    -moz-transform: translate(0, 0);
+  }
+}
+
+div[aria-label="Back to Prev Items"] i:before{
+	content:"\f104"
+}
